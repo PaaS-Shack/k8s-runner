@@ -29,6 +29,7 @@ RUN git clone https://github.com/PaaS-Shack/k8s.git /app/k8s && cd /app/k8s && n
 RUN git clone https://github.com/PaaS-Shack/kube.git /app/kube && cd /app/kube && npm install
 RUN git clone https://github.com/PaaS-Shack/utils.git /app/utils && cd /app/utils && npm install
 
+#RUN git clone https://github.com/PaaS-Shack/ingress.git /app/ingress && cd /app/ingress && npm install
 
 
 CMD ["npm", "start"]
