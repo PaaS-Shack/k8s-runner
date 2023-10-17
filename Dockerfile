@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-ENV time=2023-10-17-3
+ENV time=2023-10-17-4
 
 ENV NODE_ENV=production
 
@@ -19,7 +19,7 @@ RUN git clone https://github.com/PaaS-Shack/ci-cd.git /app/ci-cd && cd /app/ci-c
 RUN git clone https://github.com/PaaS-Shack/mysql.git /app/mysql && cd /app/mysql && npm install
 RUN git clone https://github.com/PaaS-Shack/domains.git /app/domains && cd /app/domains && npm install
 RUN git clone https://github.com/PaaS-Shack/routes.git /app/routes && cd /app/routes && npm install
-RUN git clone https://github.com/PaaS-Shack/dohs.git /app/dohs && cd /app/dohs && npm install
+#RUN git clone https://github.com/PaaS-Shack/dohs.git /app/dohs && cd /app/dohs && npm install
 RUN git clone https://github.com/PaaS-Shack/certificates.git /app/certificates && cd /app/certificates && npm install
 RUN git clone https://github.com/PaaS-Shack/accounts.git /app/accounts && cd /app/accounts && npm install
 RUN git clone https://github.com/PaaS-Shack/config.git /app/config && cd /app/config && npm install
