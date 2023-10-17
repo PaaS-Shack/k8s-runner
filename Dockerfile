@@ -1,5 +1,7 @@
 FROM node:18-alpine
 
+ENV time=2021-10-20T00:00:00Z
+
 ENV NODE_ENV=production
 
 RUN mkdir /app
@@ -18,6 +20,7 @@ RUN git clone https://github.com/PaaS-Shack/mysql.git /app/mysql && cd /app/mysq
 RUN git clone https://github.com/PaaS-Shack/domains.git /app/domains && cd /app/domains && npm install
 RUN git clone https://github.com/PaaS-Shack/routes.git /app/routes && cd /app/routes && npm install
 RUN git clone https://github.com/PaaS-Shack/dohs.git /app/dohs && cd /app/dohs && npm install
+RUN git clone https://github.com/PaaS-Shack/certificates.git /app/certificates && cd /app/certificates && npm install
 
 
 
