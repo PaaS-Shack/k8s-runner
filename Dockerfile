@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-ENV time=2021-10-20T00:00:00Z
+ENV time=2023-10-17-1
 
 ENV NODE_ENV=production
 
