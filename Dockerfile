@@ -31,5 +31,4 @@ RUN git clone https://github.com/PaaS-Shack/utils.git /app/utils && cd /app/util
 
 #RUN git clone https://github.com/PaaS-Shack/ingress.git /app/ingress && cd /app/ingress && npm install
 
-
 CMD ["npm", "start"]
